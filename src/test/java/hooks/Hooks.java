@@ -20,7 +20,7 @@ public class Hooks {
 	@Before
 	public void launchBrowser() throws IOException
 	{
-		DriverFactory.initBrowser(Utility.readDataFromPropertiesFile("Browser"));
+		DriverFactory.initBrowser(Utility.readDataFromPropertiesFile("browser"));
 	}
 	
 	@After(order=1)

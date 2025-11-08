@@ -1,7 +1,7 @@
  <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>CoverFoxBDD</groupId>
-  <artifactId>CoverFoxDDD</artifactId>
+  <groupId>31StMayCoverFoxTest</groupId>
+  <artifactId>31StMayCoverFoxTest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -38,7 +38,7 @@
           <version>3.5.4</version>
           <configuration>
           <suiteXmlFiles>
-          <suiteXmlFiles>CoverFox_Testing.xml</suiteXmlFiles>
+          <suiteXmlFiles>CoverFox_testng.xml</suiteXmlFiles>
           </suiteXmlFiles>
           </configuration>
           

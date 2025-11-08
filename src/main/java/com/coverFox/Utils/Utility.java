@@ -69,7 +69,7 @@ public class Utility {
 	public static String readDataFromPropertiesFile(String Key) throws IOException
 	{
 		Properties properties=new Properties();
-		FileInputStream myFile=new FileInputStream("C:\\Users\\Sagar\\eclipse-workspace\\31stMayCoverFoxTest\\src\\main\\resources\\Config\\Config.properties");
+		FileInputStream myFile=new FileInputStream("D:\\new eclipse\\31StMayCoverFoxTest\\src\\main\\resources\\config\\config.properties");
 		properties.load(myFile);
 		String value = properties.getProperty(Key);
 		System.out.println("reading"+Key+"and value is "+ value);
@@ -89,7 +89,7 @@ public class Utility {
 	//Read data from excel
 	public static String readDataFromExcel(String sheetName, int row, int cell) throws EncryptedDocumentException, IOException
 	{
-		FileInputStream myFile=new FileInputStream("G:\\Software Testing\\Automation\\SELENIUM\\TestData.xlsx");
+		FileInputStream myFile=new FileInputStream("D:\\new eclipse\\31StMayCoverFoxTest\\src\\main\\resources\\config\\config.properties");
 		Sheet mySheet = WorkbookFactory.create(myFile).getSheet(sheetName);
 		String testData = mySheet.getRow(row).getCell(cell).getStringCellValue();
 		System.out.println("reading data from excel..."+ testData);

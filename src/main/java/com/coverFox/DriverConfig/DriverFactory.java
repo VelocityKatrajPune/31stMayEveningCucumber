@@ -32,7 +32,7 @@ public class DriverFactory {
 		}
 		
 		driver.manage().window().maximize();
-		driver.get(Utility.readDataFromPropertiesFile("Url"));
+		driver.get(Utility.readDataFromPropertiesFile("url"));
 		return driver;
 	}
 	

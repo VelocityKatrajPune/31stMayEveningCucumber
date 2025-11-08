@@ -1,9 +1,7 @@
 assertionStudy\Demo.class
 stepDefinitions\Gmail.class
-assertionStudy\KeyWords.class
-stepDefinitions\CoverFoxCarBikeHealthInsurence.class
+runner\HealthInsuranceRunner.class
+assertionStudy\Keywords.class
 assertionStudy\TestNGAnnotations.class
 assertionStudy\Demo1.class
-stepDefinitions\HealthInsurence.class
-runner\HealthInsurenceRunner.class
 hooks\Hooks.class

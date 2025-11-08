@@ -1,28 +1,27 @@
-package com.coverFox.pages;
+package com.coverFox.Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class CoverFoxHomePage {
-	//private int a=10;
-	
-	//variables-->WebElements
-	//WebElement GetStartedButton=
-	//driver.findelement(By.xpath("//button[text()='get Started']"));
-	@FindBy(xpath="//button[@title='Get Started']")
+
+	private int a = 10;
+	// variables-->webElements
+	// WebElement getStartedButton =
+	// driver.findElement(By.xpath("//button[text()='Get Started']"));
+	@FindBy(xpath = "//button[text()='Get Started']")
 	private WebElement getStartedButton;
-	
-	//constructor
-	public CoverFoxHomePage(WebDriver driver)
-	{
+
+	// constructor-->
+	public CoverFoxHomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-	
-	//Method
-	public void clickOnGetStartedButton()
-	{
+
+	// methods-->
+	public void clickOnGetStartedButton() {
 		getStartedButton.click();
 		System.out.println("clicking on getStartedButton");
 	}
