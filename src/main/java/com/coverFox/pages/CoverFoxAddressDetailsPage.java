@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Reporter;
 
-public class CoverFoxAddressDetailspage {
+public class CoverFoxAddressDetailsPage {
 
 	@FindBy(className = "mp-input-text")
 	private WebElement pincodeField;
@@ -22,7 +22,7 @@ public class CoverFoxAddressDetailspage {
 	@FindBy(xpath = "//div[contains(text(),'mobile')]")
 	private WebElement mobNumErrMsg;
 
-	public CoverFoxAddressDetailspage(WebDriver driver) {
+	public CoverFoxAddressDetailsPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 
