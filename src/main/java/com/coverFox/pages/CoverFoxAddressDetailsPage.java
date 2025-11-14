@@ -1,4 +1,4 @@
-package com.coverFox.Pages;
+package com.coverFox.pages;
 
 import java.io.IOException;
 

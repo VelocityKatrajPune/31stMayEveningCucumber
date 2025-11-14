@@ -8,11 +8,11 @@ import org.testng.Reporter;
 import org.testng.asserts.SoftAssert;
 
 import com.coverFox.DriverConfig.DriverFactory;
-import com.coverFox.Pages.CoverFoxAddressDetailsPage;
-import com.coverFox.Pages.CoverFoxHealthPlanPage;
-import com.coverFox.Pages.CoverFoxHomePage;
-import com.coverFox.Pages.CoverFoxMemberDetailsPage;
-import com.coverFox.Pages.CoverFoxResultPage;
+import com.coverFox.pages.CoverFoxAddressDetailsPage;
+import com.coverFox.pages.CoverFoxHealthPlanPage;
+import com.coverFox.pages.CoverFoxHomePage;
+import com.coverFox.pages.CoverFoxMemberDetailsPage;
+import com.coverFox.pages.CoverFoxResultPage;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
