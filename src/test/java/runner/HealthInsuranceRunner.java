@@ -12,7 +12,7 @@ import io.cucumber.testng.CucumberOptions;
 				"D:\\new eclipse\\31StMayCoverFoxTest\\src\\test\\resources\\coverFoxFeatures\\CoverFoxHealthInsurance.feature"}
 				, glue = { "stepDefinitions",
 				"hooks" }, 
-				plugin = {"pretty","html:target/cucumber-reports/reports.html"},
+				plugin = {"pretty","html:target/cucumber-reports/reports.html","json:target/cucumber.json"},
 				
 publish = true,  dryRun = false
 
