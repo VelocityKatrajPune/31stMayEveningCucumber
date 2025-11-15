@@ -1,7 +1,7 @@
 assertionStudy\Demo.class
 stepDefinitions\Gmail.class
 runner\HealthInsuranceRunner.class
-assertionStudy\Keywords.class
 assertionStudy\TestNGAnnotations.class
 assertionStudy\Demo1.class
 hooks\Hooks.class
+stepDefinitions\HealthInsurance.class

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>11/1/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Nov 08 11:01:01 IST 2025</td>
+<td>Started on:</td><td>Sat Nov 15 18:59:39 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>19 seconds (19547 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (82 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,7 +68,7 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,26 +76,58 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='assertionStudy.KeyWords.b()'><b>b</b><br>Test class: assertionStudy.KeyWords</td>
-<td><div><pre>java.lang.AssertionError: null
-	at assertionStudy.KeyWords.b(KeyWords.java:55)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1632413663", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1632413663'><pre>java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.fail(Assert.java:116)
-	at assertionStudy.KeyWords.b(KeyWords.java:55)
+<td title='runner.HealthInsuranceRunner.setUpClass()'><b>setUpClass</b><br>Test class: runner.HealthInsuranceRunner<br>Parameters: org.testng.TestRunner@6bbe85a8</td>
+<td><div><pre>java.lang.IllegalArgumentException: The plugin specification &apos;io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm&apos; has a problem:
+
+Could not load plugin class &apos;io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm&apos;.
+
+Plugin specifications should have the format of PLUGIN[:[PATH|[URI [OPTIONS]]]
+
+Valid values for PLUGIN are: html, json, junit, message, pretty, progress, rerun, summary, teamcity, testng, timeline, unused, usage
+
+PLUGIN can also be a fully qualified class name, allowing registration of 3rd party plugins. The 3rd party plugin must implement io.cucumber.plugin.Plugin
+	at io.cucumber.core.options.PluginOption.createCouldNotLoadClass(PluginOption.java:167)
+	at io.cucumber.core.options.PluginOption.parsePluginName(PluginOption.java:145)
+	at io.cucumber.core.options.PluginOption.parse(PluginOption.java:100)
+	at io.cucumber.core.options.RuntimeOptionsBuilder.addPluginName(RuntimeOptionsBuilder.java:68)
+	at io.cucumber.core.options.CucumberOptionsAnnotationParser.addPlugins(CucumberOptionsAnnotationParser.java:85)
+	at io.cucumber.core.options.CucumberOptionsAnnotationParser.parse(CucumberOptionsAnnotationParser.java:39)
+	at io.cucumber.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:85)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: java.lang.ClassNotFoundException: io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at io.cucumber.core.options.PluginOption.parsePluginName(PluginOption.java:139)
+	... 30 more
+... Removed 23 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1223850219", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1223850219'><pre>java.lang.IllegalArgumentException: The plugin specification &apos;io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm&apos; has a problem:
+
+Could not load plugin class &apos;io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm&apos;.
+
+Plugin specifications should have the format of PLUGIN[:[PATH|[URI [OPTIONS]]]
+
+Valid values for PLUGIN are: html, json, junit, message, pretty, progress, rerun, summary, teamcity, testng, timeline, unused, usage
+
+PLUGIN can also be a fully qualified class name, allowing registration of 3rd party plugins. The 3rd party plugin must implement io.cucumber.plugin.Plugin
+	at io.cucumber.core.options.PluginOption.createCouldNotLoadClass(PluginOption.java:167)
+	at io.cucumber.core.options.PluginOption.parsePluginName(PluginOption.java:145)
+	at io.cucumber.core.options.PluginOption.parse(PluginOption.java:100)
+	at io.cucumber.core.options.RuntimeOptionsBuilder.addPluginName(RuntimeOptionsBuilder.java:68)
+	at io.cucumber.core.options.CucumberOptionsAnnotationParser.addPlugins(CucumberOptionsAnnotationParser.java:85)
+	at io.cucumber.core.options.CucumberOptionsAnnotationParser.parse(CucumberOptionsAnnotationParser.java:39)
+	at io.cucumber.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:85)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
@@ -111,168 +143,15 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: java.lang.ClassNotFoundException: io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at io.cucumber.core.options.PluginOption.parsePluginName(PluginOption.java:139)
+	... 30 more
 </pre></div></td>
 <td>0</td>
-<td>assertionStudy.KeyWords@247bddad</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='assertionStudy.KeyWords.singIn()'><b>singIn</b><br>Test class: assertionStudy.KeyWords<br/>
-<a href="#Output-997055773" onClick='toggleBox("Output-997055773", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-997055773" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-997055773">
-c test<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>assertionStudy.KeyWords@247bddad</td></tr>
-<tr>
-<td title='assertionStudy.KeyWords.c()'><b>c</b><br>Test class: assertionStudy.KeyWords<br/>
-<a href="#Output-1412794598" onClick='toggleBox("Output-1412794598", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1412794598" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1412794598">
-c test<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>assertionStudy.KeyWords@247bddad</td></tr>
-<tr>
-<td title='assertionStudy.KeyWords.login1()'><b>login1</b><br>Test class: assertionStudy.KeyWords<br/>
-<a href="#Output-1533547487" onClick='toggleBox("Output-1533547487", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1533547487" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1533547487">
-login test<br/>
-</div>
-</td>
-<td></td>
-<td>1</td>
-<td>assertionStudy.KeyWords@247bddad</td></tr>
-<tr>
-<td title='assertionStudy.KeyWords.f()'><b>f</b><br>Test class: assertionStudy.KeyWords</td>
-<td></td>
-<td>3</td>
-<td>assertionStudy.KeyWords@247bddad</td></tr>
-<tr>
-<td title='assertionStudy.KeyWords.f()'><b>f</b><br>Test class: assertionStudy.KeyWords</td>
-<td></td>
-<td>2</td>
-<td>assertionStudy.KeyWords@247bddad</td></tr>
-<tr>
-<td title='assertionStudy.KeyWords.logout()'><b>logout</b><br>Test class: assertionStudy.KeyWords<br/>
-<a href="#Output-99770475" onClick='toggleBox("Output-99770475", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-99770475" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-99770475">
-logout test<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>assertionStudy.KeyWords@247bddad</td></tr>
-<tr>
-<td title='assertionStudy.KeyWords.login()'><b>login</b><br>Test class: assertionStudy.KeyWords<br/>
-<a href="#Output-1652807864" onClick='toggleBox("Output-1652807864", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1652807864" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1652807864">
-b test<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>assertionStudy.KeyWords@247bddad</td></tr>
-<tr>
-<td title='assertionStudy.KeyWords.payment()'><b>payment</b><br>Test class: assertionStudy.KeyWords<br/>
-<a href="#Output-727250772" onClick='toggleBox("Output-727250772", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-727250772" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-727250772">
-a test<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>assertionStudy.KeyWords@247bddad</td></tr>
-<tr>
-<td title='assertionStudy.KeyWords.f()'><b>f</b><br>Test class: assertionStudy.KeyWords</td>
-<td></td>
-<td>11</td>
-<td>assertionStudy.KeyWords@247bddad</td></tr>
-<tr>
-<td title='assertionStudy.TestNGAnnotations.resultValidationNew()'><b>resultValidationNew</b><br>Test class: assertionStudy.TestNGAnnotations<br/>
-<a href="#Output-379478400" onClick='toggleBox("Output-379478400", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-379478400" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-379478400">
-z_running test validation new<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>assertionStudy.TestNGAnnotations@7817fd62</td></tr>
-<tr>
-<td title='assertionStudy.TestNGAnnotations.resultValidation()'><b>resultValidation</b><br>Test class: assertionStudy.TestNGAnnotations<br/>
-<a href="#Output-1944201789" onClick='toggleBox("Output-1944201789", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1944201789" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1944201789">
-a_running test validation<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>assertionStudy.TestNGAnnotations@7817fd62</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='assertionStudy.KeyWords.a()'><b>a</b><br>Test class: assertionStudy.KeyWords</td>
-<td><div><pre>java.lang.Throwable: Method assertionStudy.KeyWords.a() on instance assertionStudy.KeyWords@247bddad depends on not successfully finished methods 
-[assertionStudy.KeyWords.b() on instance assertionStudy.KeyWords@247bddad]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1483298597", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1483298597'><pre>java.lang.Throwable: Method assertionStudy.KeyWords.a() on instance assertionStudy.KeyWords@247bddad depends on not successfully finished methods 
-[assertionStudy.KeyWords.b() on instance assertionStudy.KeyWords@247bddad]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>assertionStudy.KeyWords@247bddad</td></tr>
+<td>runner.HealthInsuranceRunner@394a2528</td></tr>
 </table><p>
 </body>
 </html>
